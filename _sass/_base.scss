@@ -1,4 +1,6 @@
 
+/* === GLOBAL ===*/
+
 * {
   border-sizing: border-box;
 }
@@ -16,13 +18,21 @@ h1,h2,h3,h4,h5,h6,a {
   color: $text-color-dark;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover {
   color: $text-color-light;
 }
 
+
+/* === POSTS ===*/
+
+
 .post {
   background-color: white;
-  padding: 1.5em;
+  padding: 2em;
 }
 
 
@@ -42,4 +52,41 @@ ul.post-list  {
   background-color: white;
   padding: 1em;
   margin-bottom: 0.5em;
+}
+
+
+/* === MENU ===*/
+
+ul.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+ul.menu li {
+  padding: 0.9em 0;
+  flex: 1 0 auto;
+}
+
+ul.menu li:hover {
+  background-color: $grey-color-dark;
+}
+
+ul.menu a {
+  color: whitesmoke;
+}
+
+
+.main-nav {
+  background: black;
+}
+
+
+/* === FOOTER ===*/
+
+footer {
+  min-height: 10vh;
+  background-color: black;
 }
